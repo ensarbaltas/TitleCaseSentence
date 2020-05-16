@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <script >
+        /*
+Wednesday : Title Case a Sentence
+Return the provided string with the first letter of each word capitalized. 
+Make sure the rest of the word is in lower case.
+
+For the purpose of this exercise, you should also capitalize on connecting 
+words like "the" and "of".
+
+For this algorithm, you can use the split() method.
+
+titleCase("I'm a little tea pot")should return a string.
+titleCase("I'm a little tea pot")should return "I'm A Little Tea Pot".
+titleCase("sHoRt AnD sToUt") should return "Short And Stout".
+*/
+
+function titleCase(str){
+    const newStr = str.toLowerCase().split(' ')
+    const arr =[]
+    for (var i = 0; i < newStr.length; i++){
+        const upprStr = newStr[i][0].toUpperCase() + newStr[i].slice([1])
+        arr.push(upprStr)
+        console.log(upprStr)
+    }
+    return arr.join(' ')
+}
+titleCase("I'aM a littlE teA poT")
+
+
+    </script>
+</body>
+</html>
